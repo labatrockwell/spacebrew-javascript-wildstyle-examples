@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Spacebrew || Phone Events</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600'>
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<script type="text/javascript" src="js/jquery/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.mobile-1.2.0.min.js"></script>
+	<!-- // <script type="text/javascript" src="js/jquery/mobile_detect.js"></script> -->
+	<script type="text/javascript" src="js/spacebrew/sb-1.2.0.js"></script>
+	<script type="text/javascript" src="js/spacebrew/sb-admin-0.1.0.js"></script>
+	<script type="text/javascript" src="js/spacebrew/sb-admin-dropdown-gen-0.1.0.js"></script>
+	<script type="text/javascript" src="js/connection.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script>
+
+	</script>
+
+</head> 
+<body> 
+
+	<!-- content: holder for main body of content -->
+	<!-- ************************* -->
+
+	<div data-role="page">
+
+		<!-- header: holder for top app bar -->
+		<div data-role="header" class="header">
+			<h1>Spacebrew Phone Orientation Forwarder</h1>
+		</div>
+
+
+		<div data-role="content" id="contentWrapper">	
+
+			<div id="appName"> 
+				<p>
+					<strong>App Name: </strong><span> </span>
+				</p>
+			</div>
+
+			<div id="deviceMsggyro"> 
+				<p>
+					<strong>Current Orientation:</strong><br>
+					<span> </span>
+				</p>
+			</div>
+
+			<p>
+				<strong>Send Data: </strong> rotate flat
+				<select data-local-route-name="rotate flat" data-sb-type="range" data-pub-or-sub="publisher" class="spacebrew-select" data-icon="grid" data-iconpos="left"/>
+				</select>
+
+				<strong>Send Data: </strong> portrait tilt
+				<select data-local-route-name="portrait tilt" data-sb-type="range" data-pub-or-sub="publisher" class="spacebrew-select" data-icon="grid" data-iconpos="left"/>
+				</select>
+
+				<strong>Send Data: </strong> landscape tilt
+				<select data-local-route-name="landscape tilt" data-sb-type="range" data-pub-or-sub="publisher" class="spacebrew-select" data-icon="grid" data-iconpos="left"/>
+				</select>
+			</p>
+
+			<div id="statusMsgDiv">
+				<p class="title">
+					<strong>Spacebrew Connection Status:</strong>
+					<span class="message"></span>
+				</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
